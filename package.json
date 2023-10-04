@@ -6,10 +6,10 @@
   "scripts": {
     "test": "cross-env PORT=8000 mocha --watch",
     "start-dev": "webpack -w & nodemon --watch server.js --watch server/",
-    "start": "nodemon --watch server.js --watch server/",
+    "start": "nodemon --watch server.js --watch server/ react-scripts start",
     "postinstall": "webpack"
   },
-  "proxy": "localhost:4001",
+  "proxy": "http://localhost:4001",
   "author": "Codecademy",
   "license": "ISC",
   "dependencies": {
